@@ -1,0 +1,38 @@
+{
+  "_GSAPLayers": {
+    "_isEnabled": true,
+    "selector": ".page__header",
+    "_items": [
+      {
+        "_graphic": {
+          "_xlarge": "course/en/images/background-xlarge.jpg",
+          "_large": "course/en/images/background-large.jpg",
+          "_medium": "course/en/images/background-medium.jpg",
+          "_small": "course/en/images/background-small.jpg"
+        },
+
+        "_classes": "layer-background"
+      },
+      {
+        "_graphic": {
+          "_xlarge": "course/en/images/middle-xlarge.png",
+          "_large": "course/en/images/middle-large.png",
+          "_medium": "course/en/images/middle-medium.png",
+          "_small": "course/en/images/middle-small.png"
+        },
+
+        "_classes": "layer-medium"
+      },
+      {
+        "_graphic": {
+          "_xlarge": "course/en/images/front-xlarge.png",
+          "_large": "course/en/images/front-large.png",
+          "_medium": "course/en/images/front-medium.png",
+          "_small": "course/en/images/front-small.png"
+        },
+
+        "_classes": "layer-front"
+      }
+    ]
+  }
+}

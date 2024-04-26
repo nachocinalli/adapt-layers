@@ -1,0 +1,14 @@
+{
+  "name": "adapt-layers",
+  "version": "1.0.0",
+  "framework": ">=5.0.0",
+  "homepage": "https://github.com/nachocinalli/adapt-layers",
+  "issues": "https://github.com/nachocinalli/adapt-layers/issues",
+  "extension": "layers",
+  "displayName": "Layers",
+  "description": "Add layers with background images, usefull for creating parallax effects.",
+  "main": "/js/adapt-layers.js",
+  "keywords": ["adapt-plugin", "adapt-extension"],
+  "license": "GPL-3.0",
+  "targetAttribute": "_layers"
+}

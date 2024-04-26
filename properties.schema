@@ -1,0 +1,300 @@
+{
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "id": "http://jsonschema.net",
+  "required": false,
+  "globals": {},
+  "properties": {
+    "pluginLocations": {
+      "type": "object",
+      "required": true,
+      "properties": {
+        "course": {
+          "type": "object",
+          "properties": {
+            "_layers": {
+              "type": "object",
+              "required": false,
+              "legend": "Layers",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required": false,
+                  "default": true,
+                  "title": "Enable",
+                  "inputType": "Checkbox",
+                  "validators": [],
+                  "help": ""
+                }
+              }
+            }
+          }
+        },
+        "contentobject": {
+          "type": "object",
+          "properties": {
+            "_layers": {
+              "type": "object",
+              "required": false,
+              "legend": "Layers",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required": false,
+                  "default": false,
+                  "title": "Enable",
+                  "inputType": "Checkbox",
+                  "validators": [],
+                  "help": ""
+                },
+                "selector": {
+                  "type": "string",
+                  "title": "Selector",
+                  "required": false,
+                  "default": ".page__header",
+                  "inputType": "Text",
+                  "validators": [],
+                  "help": "CSS selector where the layers will be inserted"
+                },
+                "_items": {
+                  "type": "array",
+                  "required": false,
+                  "title": "Graphic layers",
+                  "items": {
+                    "type": "object",
+                    "required": true,
+                    "properties": {
+                      "_graphic": {
+                        "type": "object",
+                        "required": false,
+                        "legend": "Layer graphic",
+                        "properties": {
+                          "_xlarge": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "inputType": "Asset:image",
+                            "validators": [],
+                            "help": "Extra large image - used on desktop"
+                          },
+                          "_large": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "inputType": "Asset:image",
+                            "validators": [],
+                            "help": "Large image - used on desktop"
+                          },
+                          "_medium": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "inputType": "Asset:image",
+                            "validators": [],
+                            "help": "Medium image - used on tablet"
+                          },
+                          "_small": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "inputType": "Asset:image",
+                            "validators": [],
+                            "help": "Small image - used on mobile"
+                          }
+                        }
+                      },
+                      "_classes": {
+                        "type": "string",
+                        "required": false,
+                        "default": "",
+                        "inputType": "Text",
+                        "validators": [],
+                        "help": "CSS classes to apply to the layer"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "article": {
+          "type": "object",
+          "properties": {
+            "_layers": {
+              "type": "object",
+              "required": false,
+              "legend": "Layers",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required": false,
+                  "default": false,
+                  "title": "Enable",
+                  "inputType": "Checkbox",
+                  "validators": [],
+                  "help": ""
+                },
+                "selector": {
+                  "type": "string",
+                  "title": "Selector",
+                  "required": false,
+                  "default": "",
+                  "inputType": "Text",
+                  "validators": [],
+                  "help": "CSS selector where the layers will be inserted"
+                },
+                "_items": {
+                  "type": "array",
+                  "required": false,
+                  "title": "Graphic layers",
+                  "items": {
+                    "type": "object",
+                    "required": true,
+                    "properties": {
+                      "_graphic": {
+                        "type": "object",
+                        "required": false,
+                        "legend": "Layer graphic",
+                        "properties": {
+                          "_xlarge": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "inputType": "Asset:image",
+                            "validators": [],
+                            "help": "Extra large image - used on desktop"
+                          },
+                          "_large": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "inputType": "Asset:image",
+                            "validators": [],
+                            "help": "Large image - used on desktop"
+                          },
+                          "_medium": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "inputType": "Asset:image",
+                            "validators": [],
+                            "help": "Medium image - used on tablet"
+                          },
+                          "_small": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "inputType": "Asset:image",
+                            "validators": [],
+                            "help": "Small image - used on mobile"
+                          }
+                        }
+                      },
+                      "_classes": {
+                        "type": "string",
+                        "required": false,
+                        "default": "",
+                        "inputType": "Text",
+                        "validators": [],
+                        "help": "CSS classes to apply to the layer"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "block": {
+          "type": "object",
+          "properties": {
+            "_layers": {
+              "type": "object",
+              "required": false,
+              "legend": "Layers",
+              "properties": {
+                "_isEnabled": {
+                  "type": "boolean",
+                  "required": false,
+                  "default": false,
+                  "title": "Enable",
+                  "inputType": "Checkbox",
+                  "validators": [],
+                  "help": ""
+                },
+                "selector": {
+                  "type": "string",
+                  "title": "Selector",
+                  "required": false,
+                  "default": "",
+                  "inputType": "Text",
+                  "validators": [],
+                  "help": "CSS selector where the layers will be inserted"
+                },
+                "_items": {
+                  "type": "array",
+                  "required": false,
+                  "title": "Graphic layers",
+                  "items": {
+                    "type": "object",
+                    "required": true,
+                    "properties": {
+                      "_graphic": {
+                        "type": "object",
+                        "required": false,
+                        "legend": "Layer graphic",
+                        "properties": {
+                          "_xlarge": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "inputType": "Asset:image",
+                            "validators": [],
+                            "help": "Extra large image - used on desktop"
+                          },
+                          "_large": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "inputType": "Asset:image",
+                            "validators": [],
+                            "help": "Large image - used on desktop"
+                          },
+                          "_medium": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "inputType": "Asset:image",
+                            "validators": [],
+                            "help": "Medium image - used on tablet"
+                          },
+                          "_small": {
+                            "type": "string",
+                            "required": false,
+                            "default": "",
+                            "inputType": "Asset:image",
+                            "validators": [],
+                            "help": "Small image - used on mobile"
+                          }
+                        }
+                      },
+                      "_classes": {
+                        "type": "string",
+                        "required": false,
+                        "default": "",
+                        "inputType": "Text",
+                        "validators": [],
+                        "help": "CSS classes to apply to the layer"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
